@@ -2,6 +2,7 @@
 const app = express()
 
 const db = require('./db'); 
+require('dotenv').config();
 
 
 
@@ -25,6 +26,7 @@ app.get('/', function (req, res) {
   app.use("/menu",menuData)
 
   // comment add to connection perpose
-app.listen(3001,()=>{
+  const PORT = process.env.PORT || 3001;
+app.listen(PORT,()=>{
     console.log("THe Port Run Done");    
 })  

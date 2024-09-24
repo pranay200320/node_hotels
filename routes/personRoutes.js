@@ -38,6 +38,8 @@ routers.post('/',async (req,res) => {
     }
   })
 
+  // mongodb+srv://hellopranay:helloPranay@cluster0.z3bjv.mongodb.net/
+
   //Premetrized Api
 
   routers.get('/:workType',async (req,res)=>{
