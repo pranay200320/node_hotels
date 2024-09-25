@@ -4,7 +4,17 @@ const Person = require('../models/Person')
 
 //  Router Data
 
-routers.post('/',async (req,res) => {
+
+
+// //MiddelWare 
+
+// const logRequest = (req,res,next) => {
+//   console.log(`[${new Date().toLocaleString()}] Request Made to : ${req.originalUrl}`);
+//   next();
+
+// }
+
+routers.post('/',  async (req,res) => {
     try {
       
     const data = req.body
